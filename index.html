@@ -9,17 +9,17 @@
     <title>Welcome to Seeun Shopping Mall</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="./images/logo.jpg" />
         <h1> Seeun Site </h1>
-     </header>
+    </header>
     <nav>
         <ul>
-            <li>메인메뉴1</li>
-            <li>메인메뉴2</li>
-            <li>메인메뉴3</li>
-            <li>메인메뉴4</li>
-            <li>메인메뉴5</li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="./gallery.html">갤러리</a></li>
         </ul>
     </nav>
     <section>
@@ -54,7 +54,7 @@
             </div>
         </article>
         <br><br>
-        <article></article>
+        <article>
         <div clss="media">
             <h2>좋아하는 음악</h2>
             <audio src="./media/music01.mp3" autoplay controls></audio>
@@ -62,10 +62,26 @@
             <h2>{북극곰을 살리자}</h2>
             <video src="./media/movie.mp4" controls width="50%"></video>
             <h2>easy life pockets</h2>
-            <iframe width="800" height="400" src="https://www.youtube.com/embed/OnKhAJ6bE2k" title="[4K] 220816 easy life(이지라이프) - pockets | Live in Seoul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/OnKhAJ6bE2k" title="[4K] 220816 easy life(이지라이프) - pockets | Live in Seoul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <article></article>
-        <aside> 즐겨찾기 넣기
+        </article>
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            </div>
+        </article>
+        <aside>
+            <div class="login">
+                <form action="#" method="get">
+                    <input type="text" name="id" id=""><br>
+                    <input type="submit" value="제출">
+                </form>
+            </div>
+            <div class="bookmark">
+                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a><br>
+                <a href="./gallery.html">갤러리</a><br>
+                <a href="#home">홈이동</a><br>
+            </div>
 
         </aside>
     </section>
