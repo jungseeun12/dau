@@ -7,10 +7,33 @@
     <meta name="author" content="정세은" />
     <meta name="keywords" content="빅데이터, django, python" />
     <title>Welcome to Seeun Shopping Mall</title>
+    <script src="https://kit.fontawesome.com/1e6e170228.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            width: 80vw;
+            background-color: rgb(243, 219, 226);
+        }
+        header, footer{
+            height: 100px;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+
+        }
+        aside{
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <header id="home">
-        <img src="./images/logo.jpg" />
+        <i class="fa-regular fa-burger"></i>"
         <h1> Seeun Site </h1>
     </header>
     <nav>
@@ -23,6 +46,7 @@
         </ul>
     </nav>
     <section>
+        <div class="content">
         <article>
             <div class="photo"><!-- .: calss, #: id -->
                 <img src="./images/bigdata.jpg" alt="bigdata 이미지">
@@ -70,6 +94,7 @@
                 <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
             </div>
         </article>
+        </div>
         <aside>
             <div class="login">
                 <form action="#" method="post">
@@ -88,7 +113,12 @@
         </aside>
     </section>
     <footer>
-        copyright@정세은
+        copyright@정세은 
+        <div class="sns">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
     </footer>
 </body>
 </html>
