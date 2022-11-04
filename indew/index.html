@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="정세은" />
+    <meta name="keywords" content="빅데이터, django, python" />
+    <title>Welcome to Seeun Shopping Mall</title>
+    <script src="https://kit.fontawesome.com/1e6e170228.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <header id="home">
+        <i class="fa-solid fa-bars"></i>
+        <h1> Seeun Site </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">쇼핑몰</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="./gallery.html">갤러리</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content">
+        <article>
+            <div class="photo"><!-- .: calss, #: id -->
+                <img src="./images/bigdata.jpg" alt="bigdata 이미지">
+            </div>
+            <div class="action">
+                <h2>대외활동리스트</h2>
+                <table>
+                    <tr>
+                        <th>기간</th>
+                        <th>대외활동</th>
+                        <th>주최</th>
+                    </tr>
+                    <tr>
+                        <td>2021.3.</td>
+                        <td>마케팅전략 경진대회</td>
+                        <td>정보시스템학회</td>
+                    </tr>
+                    <tr>
+                        <td>2022.05.</td>
+                        <td>롯데 빅데이터 경진대회</td>
+                        <td>롯데그룹</td>
+                    </tr>
+                    <tr>
+                        <td>2022.08.</td>
+                        <td>머신러닝 교육프로그램</td>
+                        <td>동아대학교</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <br><br>
+        <article>
+        <div clss="media">
+            <h2>좋아하는 음악</h2>
+            <audio src="./media/music01.mp3" autoplay controls></audio>
+            <br>
+            <h2>{북극곰을 살리자}</h2>
+            <video src="./media/movie.mp4" controls width="50%"></video>
+            <h2>easy life pockets</h2>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/OnKhAJ6bE2k" title="[4K] 220816 easy life(이지라이프) - pockets | Live in Seoul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </article>
+        <article>
+            <div class="gallery">
+                <iframe src="./gallery.html" width="60%" height="300" frameborder="0"></iframe>
+            </div>
+        </article>
+        </div>
+        <aside class="right">
+            <div class="login">
+                <h2>로그인</h2>
+                <form action="#" method="post">
+                    회원ID: <input type="text" name="id" id=""><br>
+                    비밀번호: <input type="password" name="pw" id=""><br>
+                    <input type="submit" value="제출">
+                    <input type="button" value="회원가입">
+                </form>
+            </div>
+            <div class="bookmark">
+                <h2>즐겨찾기</h2>
+                <a href="http://mis.donga.ac.kr" target="_blank">경영정보학과</a><br>
+                <a href="./gallery.html">갤러리</a><br>
+                <a href="#home">홈이동</a><br>
+            </div>
+
+        </aside>
+    </section>
+    <footer>
+        copyright@정세은 
+        <div class="sns">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </footer>
+</body>
+</html>
