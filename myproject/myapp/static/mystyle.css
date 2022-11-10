@@ -1,0 +1,76 @@
+*{
+    font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+    line-height: 150%;
+ 
+}
+body{
+    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 980px;
+}
+ul {list-style-type: none;}
+a {text-decoration: none; }
+header h1
+     { display: inline;
+       padding: 15px;}
+nav ul{
+    text-align: center;
+    border-top: 2px solid #c0ca33;
+    border-bottom: 2px solid #c0ca33;
+    padding : 15px 10px;
+
+}
+nav ul li {
+    display: inline;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+}
+nav ul li:hover {
+    background-color: #c0ca33;
+}
+header, footer{
+    height: 100px;
+    font-size : 1.4em;
+}
+nav {
+    height: 50px;
+}
+.photo > img{
+    padding-top: 50px;
+    display: block;
+    margin :auto;
+    width: 50%;
+}
+table {
+   width: 90%;
+   margin: 0 auto;
+   font-size: 1.2em;
+   border: 0px;
+}
+table th {
+    background-color: #c0ca33;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: darkgrey;
+    color : whitesmoke;
+    text-align: center;
+}
+section{
+        
+    display: flex;
+    margin-top: 20px;
+  }
+  .content{
+    flex:3;
+  }
+  aside{
+    flex:1;
+  }
+.product1, .product2, .product3{
+    width: 200px;
+    height: 350px;
+    float: left;
+    border: 1px dotted red;
+}
