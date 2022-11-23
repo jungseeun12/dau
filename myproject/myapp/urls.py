@@ -19,8 +19,9 @@ from myapp import views #views를 inport
 urlpatterns = [
     path("", views.index),
     path("shop/", views.shop),
-    path("user/",views.datalist),
+    path("user/",views.datalist, name="list"),
     path("user/add/",views.add),
+    path("user/add/addrecord",views.addrecord),
     path("create/", views.create),
     path("read/<id>/",views.read),
 ]

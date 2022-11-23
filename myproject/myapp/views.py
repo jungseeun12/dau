@@ -1,8 +1,9 @@
+from django.urls import reverse
 from http.client import HTTPResponse
 from re import template
 from timeit import repeat
 from urllib import request
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render,HttpResponse, HttpResponseRedirect
 from django.template import loader
 from .models import Members
 # Create your views here.
@@ -38,6 +39,13 @@ def datalist(request):
 def add(request):
     template = loader.get_template('add.html')
     return HttpResponse(template.render({},request))
+
+def addrecord(request):
+    x = request.POST['first']
+    y = request.POST['last']
+    m = Members(firstname=x, lastname=y)
+    m.save()
+    return HttpResponseRedirect(reverse('list'))
 
 def create(request):
     return HttpResponse("<h1>안녕하세요 Create입니다.</h1>")
