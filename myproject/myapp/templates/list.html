@@ -6,12 +6,14 @@
             <th>회원id</th>
             <th>성</th>
             <th>이름</th>
+            <th>기능</th>
         </tr>
         {% for x in m %}
         <tr>
-            <td>{{x.id}}</td>
+            <td><a href="update/{{x.id}}">{{x.id}}</a></td>
             <td>{{x.firstname}}</td>
             <td>{{x.lastname}}</td>
+            <td><a href="delete/{{ x.id }}">삭제</a></td>
         </tr>
         {% endfor %}
     </table>

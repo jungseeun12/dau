@@ -22,6 +22,6 @@ urlpatterns = [
     path("user/",views.datalist, name="list"),
     path("user/add/",views.add),
     path("user/add/addrecord",views.addrecord),
-    path("create/", views.create),
-    path("read/<id>/",views.read),
+    path("user/delete/<int:id>",views.delete),
+    path("user/update/<int:id>",views.update),
 ]

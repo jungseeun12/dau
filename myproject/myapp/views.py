@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.urls import reverse
 from http.client import HTTPResponse
 from re import template
@@ -46,6 +47,17 @@ def addrecord(request):
     m = Members(firstname=x, lastname=y)
     m.save()
     return HttpResponseRedirect(reverse('list'))
+
+def delete(request, id):
+    m = Members.objects.get(id=id)
+    m.delete()
+    return HttpResponseRedirect(reverse('list'))
+
+def update(request, id):
+    m = Members.objects.get(id=id)
+    template = loader.get_template("update.html")
+    context = {'m' : m}
+    return HttpResponse(template.render(context, request))
 
 def create(request):
     return HttpResponse("<h1>안녕하세요 Create입니다.</h1>")
