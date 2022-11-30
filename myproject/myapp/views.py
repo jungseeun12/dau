@@ -59,6 +59,13 @@ def update(request, id):
     context = {'m' : m}
     return HttpResponse(template.render(context, request))
 
+def updaterecord(request, id):
+     m = Members.objects.get(id=id)
+     m.firstname = request.POST['first']
+     m.lastname = request.POST['last']
+     m.save()
+     return HttpResponseRedirect(reverse('list'))
+
 def create(request):
     return HttpResponse("<h1>안녕하세요 Create입니다.</h1>")
 

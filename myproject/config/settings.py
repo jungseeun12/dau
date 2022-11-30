@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "myapp.apps.MyappConfig",
+    "myapp.apps.MyappConfig", #추가
+    "product.apps.ProductConfig", #추가
 ]
 
 MIDDLEWARE = [

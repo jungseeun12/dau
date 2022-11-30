@@ -15,14 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp import views #views를 inport
+from product import views #views를 inport
 urlpatterns = [
-    path("", views.index),
-    path("shop/", views.shop),
-    path("user/",views.datalist, name="list"),
-    path("user/add/",views.add),
-    path("user/add/addrecord",views.addrecord),
-    path("user/delete/<int:id>",views.delete),
-    path("user/update/<int:id>",views.update),
-    path("user/update/updaterecord/<int:id>",views.updaterecord),
+
 ]
