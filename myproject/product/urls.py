@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from product import views #views를 inport
+from product import views #views를 import
 urlpatterns = [
-
+    path('',views.product,name='product'),
+    path('add/',views.add),
+    path('add/addrecord',views.addrecord),
+    path('delete/<int:id>',views.delete),
+    path('update/<int:id>',views.update),
 ]

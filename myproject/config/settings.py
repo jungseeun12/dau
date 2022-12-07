@@ -112,6 +112,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS=[
+    BASE_DIR / 'static', 
+] #static 파일들이 프로젝트에 있는 경우 반드시 기술
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
